@@ -13,7 +13,8 @@ for competitor in compjson["items"]:
   else:
     rounds[-1] += " " + competitor["personId"]
 rounds.reverse()
-print("")
-print("# " + sys.argv[1])
+out = open("input.txt", "a")
+out.write("\n")
+out.write("# " + sys.argv[1] + "\n")
 for r in rounds:
-  print(r)
+  out.write(r + "\n")

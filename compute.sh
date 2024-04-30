@@ -5,7 +5,7 @@ echo "Downloading competition data..."
 echo "START" >> input.txt
 echo "" >> input.txt
 while read p; do
-  python3 comp-json-format.py $p >> input.txt
+  python3 comp-json-format.py $p
 done < comps.txt
 echo "Calculating elos..."
 java SimpleEloCalculator
